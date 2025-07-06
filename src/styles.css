@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'PlaypenSansHebrew';
+    src: url('/public/assets/fonts/PlaypenSansHebrew-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/public/assets/fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #d2f0c2;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    margin: 1rem;
+}
+
+.step3 {
+    width: 80%;
+}
+
+.riddle-img-conatiner {
+    width: 30%;
+}
+
+.intro, .map, .final {
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro-text-container {
+    width: 80%;
+    margin: auto;
+    font-size: 1.9rem;
+}
+
+button {
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dot {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.intro-container, .riddle, .final {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    z-index: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.intro-container::before, .riddle::before, .final::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/public/background.png') center center / cover no-repeat;
+    background-position: center;
+    opacity: 0.35;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.intro-container::after, .riddle::after, .final::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+}
+
+
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+    color: #4b2e05;
+}
+
+.story {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #3d2d17;
+    line-height: 1.6;
+}
+
+.start-button {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    background-color: #7b4f09;
+    color: white;
+    padding: 1.1rem 3.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #5c3808;
+}
+
+.map-dot {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.dot-image {
+    width: 60px;
+    height: 60px;
+}
+
+.dot-label {
+    color: #222;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'PlaypenSansHebrew', sans-serif;
+    margin-top: -1rem;
+}
+
+.dot-label::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Transparent background image layer */
+.map-background {
+    position: absolute;
+    inset: 0;
+    background: url('/public/map.png') center center / cover no-repeat;
+    opacity: 0.7;
+    /* adjust as needed */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Content stays fully opaque above it */
+.map-content {
+    position: relative;
+    z-index: 1;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.map-background {
+    position: absolute;
+    inset: 0;
+    background: url('/public/map.png') center center / cover no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.map-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.map-dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.final-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.riddle-con {
+    margin: auto;
+}
+
+.riddle button:first-of-type:hover {
+    text-decoration: underline;
+}
+
+
+.riddle-container {
+    display: flex;
+    gap: 1.2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.riddle-question {
+    font-size: 1.3rem;
+    text-align: right;
+    text-align: center;
+}
+
+.riddle-question.with-image {
+    width: 60%;
+    text-align: start;
+    padding-right: 3rem;
+}
+
+.riddle-question.full-width {
+    width: 80%;
+    margin: auto;
+}
+
+.riddle-img {
+    height: 500px;
+}
+
+.riddle-submit-btn {
+    background-color: #257d25f2;
+    font-size: 1.5rem;
+
+}
+
+.riddle-input::placeholder {
+    font-size: 1.5rem;
+}
+
+
+.riddle-submit-container {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    justify-content: center;
+    height: 42px;
+    margin-top: 2.3rem;
+}
+
+.riddle-input {
+    border: none;
+    border-bottom: 1px solid;
+    background: none;
+    height: 100%;
+    width: 300px;
+}
+
+.error {
+    color: rgb(221, 1, 1);
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hint-btn {
+    background-color: #295868;
+}
+
+.hints-container {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.hints-btns-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+.hint-title {
+    margin: 0;
+}
+
+.back-btn {
+    margin-bottom: 1rem;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.answer {
+    font-size: 1.6rem;
+}
+
+.success-text {
+    font-size: 1.3rem;
+}
+
+.success-img {
+    margin-top: 1rem;
+    height: 320px;
+}
+
+.riddle-title {
+    font-size: 2.2rem;
+}
+
+.hints-text {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.map-page-button {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    background-color: #7b4f09;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    top: 20px;
+}
+
+.map-page-button.back {
+    left: 20px;
+}
+
+.map-page-button.final {
+    left: 50%;
+
+}
