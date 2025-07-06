@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import finalImg from '../assets/final-page.png'; // replace with your actual image path
+import finalImg from '../assets/11.png';
 
 export default function FinalChallenge() {
   const [input, setInput] = useState('');
@@ -17,7 +17,7 @@ export default function FinalChallenge() {
               הגיע הזמן לחשוף בפניכם את הדף האחרון ביומן:
             </p>
 
-            {/* <img src={finalImg} alt="Final Page" style={{ width: '100%', maxWidth: '500px', margin: '1rem 0' }} /> */}
+            <img src={finalImg} alt="Final Page" style={{ width: '100%', maxWidth: '500px', margin: '1rem 0' }} />
 
             <input
               value={input}
