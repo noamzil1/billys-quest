@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Billys-Quest/static/css/main.a1e0f752.css",
+    "main.js": "/Billys-Quest/static/js/main.10dfb230.js",
+    "static/js/453.9cc6ce52.chunk.js": "/Billys-Quest/static/js/453.9cc6ce52.chunk.js",
+    "static/media/map.png": "/Billys-Quest/static/media/map.7bc39e7743274771746e.png",
+    "static/media/background.png": "/Billys-Quest/static/media/background.cca32a356d792ffc7e06.png",
+    "static/media/11.png": "/Billys-Quest/static/media/11.29e2b348eecdea48b4f1.png",
+    "static/media/PlaypenSansHebrew-Regular.ttf": "/Billys-Quest/static/media/PlaypenSansHebrew-Regular.47a754a055b572221092.ttf",
+    "static/media/Rubik-Regular.ttf": "/Billys-Quest/static/media/Rubik-Regular.6c81bec7bf6c59e83826.ttf",
+    "static/media/x.png": "/Billys-Quest/static/media/x.442369ef356b5854cfa0.png",
+    "static/media/v.png": "/Billys-Quest/static/media/v.87c19dfe59a8612c31a4.png",
+    "index.html": "/Billys-Quest/index.html",
+    "main.a1e0f752.css.map": "/Billys-Quest/static/css/main.a1e0f752.css.map",
+    "main.10dfb230.js.map": "/Billys-Quest/static/js/main.10dfb230.js.map",
+    "453.9cc6ce52.chunk.js.map": "/Billys-Quest/static/js/453.9cc6ce52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1e0f752.css",
+    "static/js/main.10dfb230.js"
+  ]
+}
