@@ -7,7 +7,7 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/billys-quest">
       <Routes>
         <Route path="/" element={<IntroPage />} />
         <Route path="/intro/step3" element={<IntroPage step={3} />} />
