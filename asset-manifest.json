@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/billys-quest/static/css/main.d9b594fd.css",
-    "main.js": "/billys-quest/static/js/main.cef51f0b.js",
+    "main.js": "/billys-quest/static/js/main.318b5043.js",
     "static/js/453.9cc6ce52.chunk.js": "/billys-quest/static/js/453.9cc6ce52.chunk.js",
     "static/media/map.png": "/billys-quest/static/media/map.7bc39e7743274771746e.png",
     "static/media/background.png": "/billys-quest/static/media/background.cca32a356d792ffc7e06.png",
@@ -12,11 +12,11 @@
     "static/media/v.png": "/billys-quest/static/media/v.87c19dfe59a8612c31a4.png",
     "index.html": "/billys-quest/index.html",
     "main.d9b594fd.css.map": "/billys-quest/static/css/main.d9b594fd.css.map",
-    "main.cef51f0b.js.map": "/billys-quest/static/js/main.cef51f0b.js.map",
+    "main.318b5043.js.map": "/billys-quest/static/js/main.318b5043.js.map",
     "453.9cc6ce52.chunk.js.map": "/billys-quest/static/js/453.9cc6ce52.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9b594fd.css",
-    "static/js/main.cef51f0b.js"
+    "static/js/main.318b5043.js"
   ]
 }
